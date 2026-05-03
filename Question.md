@@ -1,5 +1,3 @@
-Here’s a cleaner, corrected version of your task with proper terminology and flow:
-
 Design and implement a Spring Boot REST API application for a Library Management System using raw JDBC (JdbcTemplate or NamedParameterJdbcTemplate, not Spring Data JDBC) with a layered architecture (Controller/API → Service → Repository) backed by a MySQL database, where you manage Members, Books, and Borrow Records.
 
 Create APIs to register members with fields such as id (auto-generated), name, email, and phone; add books with id (auto-generated), title, author, availableCopies, and price; and allow members to borrow books by providing memberId, bookId, and quantity, where the system generates a borrowId, records the borrow date, sets an automatic return date (7 days from the borrow date), tracks the actual return date, initializes the fine to 0, validates stock availability, and updates remaining copies accordingly.
